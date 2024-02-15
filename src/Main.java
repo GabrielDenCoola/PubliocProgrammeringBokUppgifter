@@ -1,5 +1,4 @@
-import com.sun.glass.ui.DelayedCallback;
-import com.sun.org.apache.xpath.internal.functions.FuncSubstring;
+
 import javax.swing.JOptionPane;
 import  java.time.LocalDate;
 import java.time.LocalTime;
@@ -9,7 +8,7 @@ import java.time.format.DateTimeFormatter;
 
 public class Main {
 
-   // public static void main(String[] args) {
+    public static void main(String[] args) {
        /*
             Uppgift 8.1
        String a = null;
@@ -36,18 +35,22 @@ public class Main {
         String fotime = time.format(ftime);
         System.out.println(fotime);
 
-*/
 
-   /*
-            8.8
-   LocalDate date = LocalDate.now();
-    DateTimeFormatter fdate = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-    String fodate = date.format(fdate);
-    System.out.println(fodate);
 
-    String månad = fodate.substring(5,7);
-    System.out.println("Månad:"+ månad);
-*/
+
+           // 8.8
+  int L = 5;
+
+
+  if(L<8) {
+      LocalDate date = LocalDate.now();
+      DateTimeFormatter fdate = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+      String fodate = date.format(fdate);
+      System.out.println(fodate);
+
+      String månad = fodate.substring(5, 7);
+      System.out.println("Månad:" + månad);
+  }
 
   /*
                     DET FUNGERAR ICKE
@@ -62,6 +65,6 @@ public class Main {
         return text = text.replace( " ","");
 
     }
-*/
 
-}
+*/
+}}
