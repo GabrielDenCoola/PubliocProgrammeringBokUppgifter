@@ -57,7 +57,6 @@ public class Yatzy30 {
     public static int[] lockDice(int[] Tärning, int[] LåstTärning){
         for (int i = 0; i < 1;) {
             System.out.println("Skriv vilka tärningar du vill spara! Skriv inget mellanrum utan om du vil spara 3 skriv ett hundratal ex. 655 om det går");
-            LåstTärning = scn.next();
         }
         return(LåstTärning);
     }
